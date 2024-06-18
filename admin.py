@@ -10,13 +10,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.action_chains import ActionChains # lля сколддинга к нужному элементу импортируем класс ActionChains
 from selenium.common.exceptions import NoSuchElementException
-# import pytest
 
-
-
-
-
- # здесь  авторизация админа Котлы
 
 class Admin_kotly(unittest.TestCase):
 
@@ -163,7 +157,7 @@ class Admin_kotly(unittest.TestCase):
         self.fillter(driver)# вызов метода  фильтрации,котрый выше
         self.sort_order(driver) # вызов метода сртирвоаик по полям  , котрый выше
         self.search(driver)# вызов метода  поика ,котрый выше
-       # self.profile_device(driver) # вызов метода профиля ,котрый выше
+        self.profile_device(driver) # вызов метода профиля ,котрый выше
 
 
     def tear_down(self):
