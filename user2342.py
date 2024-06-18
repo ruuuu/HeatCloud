@@ -12,11 +12,6 @@ from selenium.webdriver.common.action_chains import ActionChains # lля ско�
 from selenium.common.exceptions import NoSuchElementException
 
 
-class Admin_kotly(unittest.TestCase):
-
-    def authorization(self, driver): # авторизация
-
-        driver.get("https://heatcloud-admin.technaxis.com/external/login")
 
 
         try:
