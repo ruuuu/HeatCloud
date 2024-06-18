@@ -5,13 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys # для нажатия клаив клавиатуры
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait  # ожидания различных событий
-from selenium.webdriver.support.ui import Select  # работа со списками
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.common.action_chains import ActionChains # lля сколддинга к нужному элементу импортируем класс ActionChains
-from selenium.common.exceptions import NoSuchElementException
-# import pytest
- # здесь  авторизация админа Котлы
+from selenium.webdriver.sup
 
 class Admin_kotly(unittest.TestCase):
 
