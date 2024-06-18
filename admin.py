@@ -12,15 +12,7 @@ from selenium.webdriver.common.action_chains import ActionChains # lля ско�
 from selenium.common.exceptions import NoSuchElementException
 
 
-class Admin_kotly(unittest.TestCase):
-
-    def authorization(self, driver): # авторизация
-
-        driver.get("https://heatcloud-admin.technaxis.com/external/login")
-
-
-        try:
-            email_field = WebDriverWait(driver, 10).until(ec.presence_of_element_located((By.XPATH, "//*[@id='mat-input-0']" )))#
+iver, 10).until(ec.presence_of_element_located((By.XPATH, "//*[@id='mat-input-0']" )))#
             email_field.send_keys("hcadmin@mail.ru")
         except TimeoutError:
             print("время ожидания поля емэйл вышло")
